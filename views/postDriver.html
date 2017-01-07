@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Post A driver </h2>
+    <form class="form-horizontal" action ="/bus-api/post/driver" method="post">
+        <fieldset>
+            <div class="form-group">
+                <label class="control-label col-sm-2" >Driver NTC:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="driverNTC" placeholder="Enter NTC Number">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" >Driver NIC:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="driverNIC" placeholder="Enter ID Number">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Driver Name:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="driverFName" placeholder="Enter First Name">
+                    <input type="text" class="form-control" name="driverLName" placeholder="Enter Last Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Date of Birth:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="driverDOB" placeholder="Enter birth Data">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2">Mobile Number:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="driverTP" placeholder="Enter Mobile number">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Address:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="driverAddress" placeholder="Enter Address">
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+</body>
+</html>
