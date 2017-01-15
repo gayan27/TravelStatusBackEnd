@@ -4,8 +4,6 @@
     <list default="true" id="b21c7f52-22c4-4938-8ece-9ba70e17397e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app-configuration.json" afterPath="$PROJECT_DIR$/app-configuration.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataModels/ModelController.js" afterPath="$PROJECT_DIR$/dataModels/ModelController.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -415,12 +413,12 @@
       <workItem from="1483941187786" duration="132000" />
       <workItem from="1484073795112" duration="4325000" />
       <workItem from="1484126931012" duration="1365000" />
-      <workItem from="1484496727301" duration="2078000" />
+      <workItem from="1484496727301" duration="3272000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153909000" />
+    <option name="totallyTimeSpent" value="155103000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -432,7 +430,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1378" height="775" extended-state="1" />
+    <frame x="-7" y="0" width="1378" height="775" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11702128" sideWeight="0.4924078" order="0" side_tool="false" content_ui="combo" />
