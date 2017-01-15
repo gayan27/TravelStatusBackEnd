@@ -19,7 +19,7 @@ services.serviceCalls(app);
 app.listen(config.SERVER_PORT,function (res,err){
     if(err){
         utill.logger('Server did not started',500);
-        console.log('Please Check the error'+err);
+        console.log('Please Check the error'+ err);
         res.status(500);
     }
     var msg ='listnnig on port ' +config.SERVER_PORT;

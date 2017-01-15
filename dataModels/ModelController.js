@@ -20,6 +20,7 @@ module.exports.dbConnection=function () {
     if(mongoose.connection.readyState){
         return true;
     }else{
+        mongoose.Promise = global.Promise;
         mongoose.connect(config.DB_HOST+':'+config.DB_PORT+'/'+config.DB_NAME);
 
         // When successfully connected
