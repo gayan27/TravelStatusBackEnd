@@ -1,6 +1,6 @@
 {
   "SERVER_PORT":8000,
   "DB_PORT":27017,
-  "DB_HOST":"35.161.105.201", //check ec2 console panal
+  "DB_HOST":"35.163.63.166",
   "DB_NAME":"BackendMainDB"
 }
