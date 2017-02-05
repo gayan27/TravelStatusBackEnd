@@ -6,8 +6,81 @@ var utill = require('../../utills/utils');
 var config = require('../../../app-configuration.json');
 var BusModel = require('../../../dataModels/forBus/objectModelForBus');
 var dbUtills =require('../../../dataModels/ModelController');
+
 //==============================================================================
 
+var obj ={
+    totalUsers :2550,
+    totalSponsors:500,
+    totalAdds:20,
+    totalDrivers:452,
+    totalConductors:45,
+    totalBusses:458,
+    lastWeekUsers:15,
+    lastWeekSponsors:14,
+    lastWeekAdds:80,
+    lastWeekDrivers:10,
+    lastWeekConductors:50 ,
+    lastWeekBuses:50,
+    time:"12th of january 2017",
+    topCom1:"Virtusa",
+    topCom2:"WSO2",
+    topCom3:"Crowdireia",
+    topCom4:"Enhanser",
+    topCom5:"Pearson",
+    topCom6:"Uniliver",
+    topCom7:"UOM",
+    topCom8:"UGC",
+    topCom1Point:80,
+    topCom2Point:60,
+    topCom3Point:50,
+    topCom4Point:45,
+    topCom5Point:30,
+    topCom6Point:20,
+    topCom7Point:10,
+    topCom8Point:5,
+    topDriver1NTC:"NTC1020",
+    topDriver2NTC:"NTC2000",
+    topDriver3NTC:"NTC1540",
+    topDriver4NTC:"NTC7852",
+    topDriver5NTC:"NTC1452",
+    topConductor1NTC:"NTC1782",
+    topConductor2NTC:"NTC1702",
+    topConductor3NTC:"NTC1140",
+    topConductor4NTC:"NTC1455",
+    topConductor5NTC:"NTC1002",
+    topBusId1:"AA1000",
+    topBusId2:"MT1450",
+    topBusId3:"BB1250",
+    topBusId4:"CD7896",
+    topBusId5:"FG4582",
+    topBusId1Points:100,
+    topBusId2Points:80,
+    topBusId3Points:70,
+    topBusId4Points:60,
+    topBusId5Points:10,
+    topUser1 :"Chanaka",
+    topUser2 :"Gayan",
+    topUser3 :"Prasad",
+    topUser4 :"Sanduni",
+    topUser5 :"Danushika",
+    topUser1Point:400,
+    topUser2Point:300,
+    topUser3Point:350,
+    topUser4Point:200,
+    topUser5Point:150,
+    topUser6Point:100,
+
+};
+
+var profile ={
+    adminName :"Chanaka",
+    fName    : "Chanaka",
+    lName    :"Fernando",
+    adminPropic:"/app/img/propic.jpg",
+    adminRole    :"Admin"
+
+}
 
 
 
@@ -17,7 +90,37 @@ module.exports.forBusAPI=function(app){
 
 
 
+    //remove this onu teasy
+	app.post('/register-sponsor',function(req,res){
+		console.log(req.url);
+		var object = req.body;
+		console.log(req.body);
+		console.log('============');
+            res.status(200);
+            res.json({status:200,masege:'ok',content:''});
+	});
 
+
+	//post a overview object
+    app.get('/overview',function (req,res) {
+        console.log(req.url);
+        var object =JSON.stringify(obj);
+
+        res.json(obj);
+        console.log("done");
+
+    });
+
+    ///post a profile object
+    app.get('/profile',function (req,res) {
+        console.log(req.url);
+        var object =JSON.stringify(profile);
+        res.json(profile);
+        console.log("profile done");
+    });
+	
+	
+	
     app.get('/bus-api', function (req, res) {
         res.sendFile(path.join(__dirname, '../../../views', '/index.html'));
         res.status(200);

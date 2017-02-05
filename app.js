@@ -11,6 +11,7 @@ var app = express();
 
 
 app.use(bodyParser.urlencoded({extend:true}));
+app.use(bodyParser.json())
 utill.logger('Execution started',200);
 services.serviceCalls(app);
 
