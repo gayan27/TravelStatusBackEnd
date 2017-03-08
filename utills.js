@@ -3,7 +3,7 @@
  * @Email nuwan.c.fernando@gmail.com
  */
 
-var config =require('./app-configuration.json.json');
+var config =require('./app-config.json');
 
 
 /**
@@ -111,8 +111,7 @@ exports.DBConnection=dbConnection;
  * @param res          : response object
  * @param err          : error object
  */
-function sendResponce(statusCode,res,err,result) {
-
+function sendResponce(statusCode,res,err,result){
     res.setHeader('Content-Type', 'application/json');
     if (err) {
         res.status(statusCode).send({

@@ -6,8 +6,10 @@
 var utills = require('../utills');
 
 var backEndGetRequests  = require('./EndPoints/getRequests');
-//var backEndPostRequests = require('./backEndServices/postRequests');
-//var backEndPostRequests = require('./backEndServices/updateRequests');
+var backEndPostRequests = require('./EndPoints/postRequests');
+var backEndUpdateRequests = require('./EndPoints/updateRequests');
+
+var busScheduleAPI = require('./forBusAPI/getRequest');
 
 
 
@@ -17,5 +19,7 @@ module.exports.services = function(app){
 
     backEndGetRequests.getMethods(app);
     //backEndPostRequests.postMethods(app);
+
+    busScheduleAPI.getMethods(app);
 
 };
