@@ -3,7 +3,7 @@
  */
 var path =require('path');
 var utill = require('../../utills/utils');
-var config = require('../../../app-configuration.json');
+var config = require('../../../app-config.json');
 var BusModel = require('../../../dataModels/forTrain/objectModelForTrain');
 var dbUtills =require('../../../dataModels/ModelController');
 //=======================================================================
